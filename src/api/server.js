@@ -103,10 +103,10 @@ class SearchEngineAPI {
         await this.indexer.initialize();
 
         // Process seed URLs
-        const documents = []; // This would be populated by the crawler
+        const documents = [];
         for (const url of seedUrls) {
           const document = await this.crawler.processUrl(url, 0);
-          documents.push(document);
+          if (document) documents.push(document);
         }
 
         // Index documents
