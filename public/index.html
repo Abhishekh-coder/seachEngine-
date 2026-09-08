@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Search Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🔍 Web Search Engine</h1>
+    <p>Built with Node.js</p>
+  </header>
+
+  <main class="search-container">
+    <section class="search-box">
+      <form id="searchForm" novalidate>
+        <div class="input-group">
+          <input type="text"
+                 id="searchInput"
+                 name="q"
+                 placeholder="Enter your search query..."
+                 autocomplete="off"
+                 required>
+          <button type="submit" class="search-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+      <div id="suggestions" class="suggestions-list" style="display: none;"></div>
+    </section>
+
+    <div id="results" class="results-panel" style="display: none;"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Web Search Engine - Educational Project</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

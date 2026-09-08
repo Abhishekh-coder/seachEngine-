@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Runtime data & search index
+data/*.json
+!data/.gitkeep
+
+# Environment & local settings
+.env
+.env.*
+.claude/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
